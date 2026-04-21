@@ -97,6 +97,9 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card:hover {
@@ -123,6 +126,9 @@ body {
 
 .card-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .blocks-section {
@@ -189,7 +195,7 @@ body {
 }
 
 .tooltip {
-    margin-top: 15px;
+    margin-top: auto; 
     background: var(--primary-color);
     padding: 5px 10px;
     border-radius: 4px;
