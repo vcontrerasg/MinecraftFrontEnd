@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineDex - La Enciclopedia de Bloques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Mine<span>Dex</span></h1>
+        </div>
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Criaturas</a>
+            <a href="#">Bloques</a>
+            <a href="#">Recetas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explora el Mundo Cuadrado</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Busca un ítem o criatura...">
+                    <button>Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Hostiles</button>
+            <button class="filter-btn">Pacíficos</button>
+            <button class="filter-btn">Jefes</button>
+        </section>
+
+        <section class="grid-container">
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/creeper.gif" alt="Creeper">
+                </div>
+                <div class="card-info">
+                    <h3>Creeper</h3>
+                    <p>Criatura hostil que explota al acercarse.</p>
+                    <div class="tooltip">
+                        <span>Estadísticas</span>
+                        <ul class="stats">
+                            <li>Vida: 20</li>
+                            <li>Daño: Variable</li>
+                            <li>Tipo: Hostil</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/steve.png" alt="Steve">
+                </div>
+                <div class="card-info">
+                    <h3>Steve</h3>
+                    <p>El protagonista principal de la aventura.</p>
+                    <div class="tooltip">
+                        <span>Estadísticas</span>
+                        <ul class="stats">
+                            <li>Vida: 20</li>
+                            <li>Habilidad: Construir</li>
+                            <li>Tipo: Jugador</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/enderman.png" alt="Enderman">
+                </div>
+                <div class="card-info">
+                    <h3>Enderman</h3>
+                    <p>Misteriosa criatura que se teletransporta.</p>
+                    <div class="tooltip">
+                        <span>Estadísticas</span>
+                        <ul class="stats">
+                            <li>Vida: 40</li>
+                            <li>Daño: 7</li>
+                            <li>Tipo: Neutral</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-image">
+                    <img src="img/pig.png" alt="Cerdo">
+                </div>
+                <div class="card-info">
+                    <h3>Cerdo</h3>
+                    <p>Animal pacífico que otorga alimento.</p>
+                    <div class="tooltip">
+                        <span>Estadísticas</span>
+                        <ul class="stats">
+                            <li>Vida: 10</li>
+                            <li>Daño: 0</li>
+                            <li>Tipo: Pasivo</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="blocks-section">
+    <h2>Catálogo de Bloques</h2>
+    <div class="blocks-grid">
+        <div class="block-item">
+            <div class="block-icon">
+                <img src="img/grass_block.png" alt="Bloque de Hierba">
+            </div>
+            <div class="block-detail">
+                <h4>Hierba</h4>
+                <p>ID: minecraft:grass_block</p>
+            </div>
+        </div>
+
+            <div class="block-item">
+                <div class="block-icon">
+                    <img src="img/tnt.png" alt="TNT">
+                </div>
+                <div class="block-detail">
+                    <h4>TNT</h4>
+                    <p>ID: minecraft:tnt</p>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="block-icon">
+                    <img src="img/diamond_ore.png" alt="Mena de Diamante">
+                </div>
+                <div class="block-detail">
+                    <h4>Mena Diamante</h4>
+                    <p>ID: minecraft:diamond_ore</p>
+                </div>
+            </div>
+
+            <div class="block-item">
+                <div class="block-icon">
+                    <img src="img/crafting_table.png" alt="Mesa de Trabajo">
+                </div>
+                <div class="block-detail">
+                    <h4>Mesa de Crafteo</h4>
+                    <p>ID: minecraft:crafting_table</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="multimedia">
+            <h2>Tráiler Oficial</h2>
+            <div class="video-frame">
+                <div class="video-ratio">
+                    <iframe 
+                        src="https://www.youtube.com/embed/kSv6qlPtvR0" 
+                        title="YouTube video player" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MineDex - Proyecto Estudiante</p>
+        <div class="social">
+            <span>GitHub</span>
+            <span>Discord</span>
+        </div>
+    </footer>
+
+</body>
+</html>
