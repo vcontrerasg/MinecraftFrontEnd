@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineDex - Catálogo de Bloques</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bloques.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1>Mine<span>Dex</span></h1>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="criaturas.html">Criaturas</a>
+            <a href="bloques.html">Bloques</a>
+            <a href="#">Recetas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="height: 30vh;">
+            <div class="hero-content">
+                <h2>Catálogo de Bloques</h2>
+                <p>Materiales esenciales para tu supervivencia y construcción</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active">Todos</button>
+            <button class="filter-btn">Construcción</button>
+            <button class="filter-btn">Utilitarios</button>
+            <button class="filter-btn">Minerales</button>
+        </section>
+
+    <section class="grid-container">
+        
+        <article class="card">
+            <div class="card-image">
+                <img src="img/crafting_table.png" alt="Mesa de Trabajo">
+            </div>
+            <div class="card-info">
+                <h3>Mesa de Crafteo</h3>
+                <p>El bloque fundamental para fabricar herramientas y objetos avanzados.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 2.5</li>
+                        <li>Herramienta: Hacha</li>
+                        <li>ID: minecraft:crafting_table</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/furnace.png" alt="Horno">
+            </div>
+            <div class="card-info">
+                <h3>Horno</h3>
+                <p>Permite fundir minerales y cocinar alimentos para sobrevivir.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.5</li>
+                        <li>Herramienta: Pico</li>
+                        <li>ID: minecraft:furnace</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/chest.png" alt="Cofre">
+            </div>
+            <div class="card-info">
+                <h3>Cofre</h3>
+                <p>Almacena hasta 27 montones de objetos diferentes.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Capacidad: 27 slots</li>
+                        <li>Herramienta: Hacha</li>
+                        <li>ID: minecraft:chest</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/diamond_ore.png" alt="Mena de Diamante">
+            </div>
+            <div class="card-info">
+                <h3>Mena de Diamante</h3>
+                <p>Uno de los materiales más valiosos y resistentes del juego.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 3.0</li>
+                        <li>Pico: Hierro o +</li>
+                        <li>ID: minecraft:diamond_ore</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/tnt.png" alt="TNT">
+            </div>
+            <div class="card-info">
+                <h3>TNT</h3>
+                <p>Bloque explosivo utilizado para minería o defensa.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Poder: 4</li>
+                        <li>Activación: Redstone</li>
+                        <li>ID: minecraft:tnt</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/grass_block.png" alt="Bloque de Hierba">
+            </div>
+            <div class="card-info">
+                <h3>Bloque de Hierba</h3>
+                <p>El bloque más común en la superficie del mundo.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 0.6</li>
+                        <li>Herramienta: Pala</li>
+                        <li>ID: minecraft:grass_block</li>
+                    </ul>
+                </div>
+            </div>
+        </article> <article class="card">
+            <div class="card-image">
+                <img src="img/netherite_block.png" alt="Bloque de Netherita ">
+            </div>
+            <div class="card-info">
+                <h3>Escombros Ancestrales</h3>
+                <p>El material más costoso y resistente, esencial para mejorar el equipo de diamante.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 50</li>
+                        <li>Resistencia: Explosiones</li>
+                        <li>ID: minecraft:netherite_block</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/obsidian.png" alt="Obsidiana">
+            </div>
+            <div class="card-info">
+                <h3>Obsidiana</h3>
+                <p>Bloque extremadamente duro necesario para construir el portal al Nether.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: 50</li>
+                        <li>Herramienta: Pico Diamante+</li>
+                        <li>ID: minecraft:obsidian</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/End_Portal.png" alt="Marco del Portal del End">
+            </div>
+            <div class="card-info">
+                <h3>Portal De End</h3>
+                <p>Estructura clave encontrada en fortalezas para acceder a la dimensión del End.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Dureza: Indestructible</li>
+                        <li>Ubicación: Strongholds</li>
+                        <li>ID: minecraft:end_portal_frame</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card-image">
+                <img src="img/Ojo_de_Ender.png" alt="Ojo de Ender">
+            </div>
+            <div class="card-info">
+                <h3>Ojo de Ender</h3>
+                <p>Objeto vital para localizar fortalezas y activar el portal hacia el jefe final.</p>
+                <div class="tooltip">
+                    <span>Propiedades</span>
+                    <ul class="stats">
+                        <li>Uso: Localización</li>
+                        <li>Origen: Crafteo</li>
+                        <li>ID: minecraft:ender_eye</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MineDex - Proyecto Estudiante</p>
+        <div class="social">
+            <span>GitHub</span>
+            <span>Discord</span>
+        </div>
+    </footer>
+
+</body>
+</html>
