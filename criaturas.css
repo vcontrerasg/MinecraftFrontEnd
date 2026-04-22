@@ -6,7 +6,7 @@
     --card-bg: #2d2d2d;
     --accent: #ffeb3b;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +31,7 @@ body {
     top: 0;
     z-index: 100;
 }
+
 
 .logo h1 span {
     color: var(--primary-color);
@@ -59,6 +60,19 @@ body {
     animation: fadeIn 1.5s ease-in;
 }
 
+.pixel-title-green {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    animation: pulse 10s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); filter: drop-shadow(0 0 10px rgba(0, 78, 0, 0.288)); }
+    to { transform: scale(1.02); filter: drop-shadow(0 0 20px rgba(15, 131, 15, 0.267)); }
+}
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
@@ -72,11 +86,13 @@ body {
     gap: 10px;
 }
 
+
+
 .filter-btn {
+    padding: 4rem 2%;
+    background-color: #252525;
     padding: 8px 15px;
-    background: transparent;
-    border: 1px solid var(--primary-color);
-    color: white;
+    color: whitesmoke;
     cursor: pointer;
 }
 
@@ -131,61 +147,92 @@ body {
     flex-grow: 1;
 }
 
-.blocks-section {
-    padding: 4rem 5%;
+
+.seccion {
+    padding: 4rem 2%;
     background-color: #252525;
+    padding: 8px 15px;
+    color: whitesmoke;
+    cursor: pointer;
 }
 
-.blocks-section h2 {
+h2 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--accent);
 }
 
-.blocks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-}
+.overworld{
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/overworld.png');
+    background-size: cover;
+    background-position: center;
 
-.block-item {
-    background: #333;
-    padding: 1rem;
-    border: 2px solid #444;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    transition: border-color 0.3s;
-}
-
-.block-item:hover {
-    border-color: var(--primary-color);
-}
-
-.block-icon {
-    width: 64px;
-    height: 64px;
-    background: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+.title-overworld {
+    color: #00fbff67;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.685);
+    display: inline-block;
+    margin: 20px 0;
+    animation: pulse 6s infinite alternate;
 }
 
-.block-icon img {
-    width: 48px;
-    image-rendering: pixelated; 
-    animation: pulse 2s infinite ease-in-out;
+.nether{
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/nether.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+.title-nether {
+    color: #69191969;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 20px 0;
+    animation: pulse 6s infinite alternate;
 }
 
-.block-detail h4 {
-    color: white;
-    font-size: 1rem;
+.the_end{
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/the_end.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
 }
 
-.block-detail p {
-    font-size: 0.8rem;
-    color: #888;
+.title-the_end {
+    color: #73269163;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 20px 0;
+    animation: pulse 6s infinite alternate;
 }
 
 @keyframes pulse {
